@@ -41,3 +41,14 @@ docker exec -it ollama ollama list
 ## How to Get Gemini API Key 
 ### Visit this website to get your API key
 
+``` bash
+docker run -d \
+  --name vectordb \
+  -e POSTGRES_DB=vectordb \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=root \
+  -p 5433:5433 \
+  ankane/pgvector:latest
+
+```
+
