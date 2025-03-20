@@ -47,7 +47,7 @@ docker run -d \
   -e POSTGRES_DB=vectordb \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=root \
-  -p 5433:5433 \
+  -p 5432:5432 \
   ankane/pgvector:latest
 
 ```
