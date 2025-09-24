@@ -4,7 +4,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 
 # Initialize Ollama with all available parameters
 chat_model = Ollama(
-    model="deepseek-r1:1.5b",  # Change model as needed
+    model="gemma3:4b",  # Change model as needed
     temperature=0.7,  # Controls randomness (0 = deterministic, 1 = creative)
     num_ctx=2048,  # Context window size
     num_gpu=1,  # Use GPU if available
